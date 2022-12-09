@@ -33,7 +33,7 @@ function Banner() {
     }}>
         <div className="banner__contents">
             <h1 className="banner__title">
-                The Sopranos
+                {movie?.name || movie?.title || movie?.original_name}
             </h1>
             <div className="banner__buttons">
                 <button className='banner__button'>Play</button>
@@ -41,7 +41,7 @@ function Banner() {
             </div>
             <h1 className="banner__description">
                {truncate(
-                "This is a test ernienri nriwninwri iwnrin wnrininw nirnjdeseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeecription.",120)}
+                movie?.overview,150)}
             </h1>
         </div>
         <div className="banner--fadebottom" />

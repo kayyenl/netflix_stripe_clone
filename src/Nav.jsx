@@ -22,7 +22,7 @@ function Nav() {
   }, [])
 
   return (
-    <div className={`nav ${show && "nav__black"}`}>
+    <div className={`nav ${!show && "nav__black"}`}>
       <div className="nav__contents">
         <img src={NetflixLogo} alt="" className='nav__logo'/>
         <img src={AvatarLogo} alt="" className='nav__avatar'/>
