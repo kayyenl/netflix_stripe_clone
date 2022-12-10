@@ -20,6 +20,10 @@ function HomeScreen() {
         title='Action'
         fetchUrl={requests.fetchActionMovies}
      />
+     <Row
+        title='Top Rated'
+        fetchUrl={requests.fetchTopRated}
+     />
      <Row 
         title='Comedy'
         fetchUrl={requests.fetchComedyMovies}
@@ -27,6 +31,10 @@ function HomeScreen() {
      <Row 
         title='Documentaries'
         fetchUrl={requests.fetchDocumentaries}
+     />
+     <Row 
+        title='Horror'
+        fetchUrl={requests.fetchHorrorMovies}
      />
     </div>
   )

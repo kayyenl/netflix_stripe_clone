@@ -53,38 +53,42 @@
 }
 
 .banner__contents {
-    margin-left: 30px;
-    padding-top: 140px;
-    height: 190px;
+  padding-top: 140px;
+  height: 190px;
+  background-color: rgba(37, 37, 37, 0.3);
 }
 
 .banner__title {
+    margin-left: 30px;
     font-size: 2.4rem;
     font-weight: 700;
     padding-bottom: 0.3rem;
-}
-
-.banner__description {
+  }
+  
+  .banner__description {
+    margin-left: 30px;
     font-weight: 500;
     width: 45rem;
     line-height: 1.3;
     font-size: 0.8rem;
     max-width: 330px;
     height: 80px;
+    padding-top: 20px;
     overflow-wrap: break-word;
-}
-
-.banner--fadebottom {
+  }
+  
+  .banner--fadebottom {
     height: 7.4rem;
     background-image: linear-gradient(
-        180deg,
-        transparent,
-        rgba(37, 37, 37, 0.61),
-        #111
-    );
-}
-
-.banner__button {
+      180deg,
+      rgba(37, 37, 37, 0.3),
+      rgba(37, 37, 37, 0.61),
+      #111
+      );
+    }
+    
+  .banner__button {
+    margin-left: 30px;
     cursor: pointer;
     color: white;
     outline: none;
@@ -114,8 +118,16 @@
 
 .row__posters {
   display: flex;
+  align-items: center;
+  height: 110%;
   overflow-y: hidden;
   overflow-x: scroll;
+}
+
+.row__name {
+  font-size: 20px;
+  padding: 8px 8px 8px 0px;
+  font-weight: 500;
 }
 
 .row__posters::-webkit-scrollbar {
@@ -123,7 +135,22 @@
 }
 
 .row__poster {
-  max-height: 100px;
-  object-fit: contain;
-  margin-right: 10px;
+  max-height: 120px;
+  margin-right: 15px;
+  width: 100%;
+  transition: transform 450ms;
+}
+
+.row__poster--large {
+  max-height: 250px;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row__poster--large:hover {
+  transform: scale(1.09);
+  opacity: 1;
 }
