@@ -14,18 +14,18 @@ function HomeScreen() {
      <Row 
         title='NETFLIX ORIGINALS'
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow
+        isLarge = {true}
      />
      <Row
-        title='ACTION'
+        title='Action'
         fetchUrl={requests.fetchActionMovies}
      />
      <Row 
-        title='COMEDY'
+        title='Comedy'
         fetchUrl={requests.fetchComedyMovies}
      />
      <Row 
-        title='DOCUMENTARIES'
+        title='Documentaries'
         fetchUrl={requests.fetchDocumentaries}
      />
     </div>
