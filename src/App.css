@@ -1,6 +1,5 @@
 .app {
   background-color: #111;
-  height: 100vh;
 }
 
 .nav {
@@ -43,6 +42,8 @@
   height: 30px;
   cursor: pointer;
 }
+
+/* BANNER SECTION */
 
 .banner {
   position: relative;
@@ -102,4 +103,21 @@
     color: #000;
     background-color: #e6e6e6;
     transition: all 0.2s;
+}
+
+/* ROW SECTION */
+
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row__poster {
+  max-height: 100px;
 }

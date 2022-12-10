@@ -4,7 +4,7 @@ import requests from './request'
 
 function Banner() {
     const [movie, setMovie] = useState([]);
-    let baseImage = "https://image.tmdb.org/t/p/original"
+    const baseImage = "https://image.tmdb.org/t/p/original"
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(requests.fetchTrending)
@@ -19,7 +19,7 @@ function Banner() {
         fetchData() 
     }, [])
 
-    console.log(movie)
+    // console.log(movie)
     
     function truncate(string, n) {
         return string?.length > n ? string.substring(0, n-1) + '...' : string;
